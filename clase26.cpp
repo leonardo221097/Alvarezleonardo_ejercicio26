@@ -15,7 +15,9 @@ int main () {
  
 float factorial (int x,double *puntero){ // creo la función factorial
 	for (int i=0;i<x;i++){
-		if(i==0||i==1 ) // si el valor dado es 1 o 0 imprimir 1
+		if(i==0 ) //  si el valor i es 0 retornar 1
+		{ puntero[i] =1;} 
+        else if(i==1 ) // si el valor de i es igual a 0 retornar 1
 		{ puntero[i] =1;}
 		else
 		{
@@ -26,7 +28,7 @@ float factorial (int x,double *puntero){ // creo la función factorial
 		}
 			
 		}
-		cout << puntero[i] << endl	; // guarda los valores de factorial que seran llamados en el main
+		cout << "el factorial de"<<" "<< i << " "<< "es" <<" "<< puntero[i] << endl	; // imprime los valores de factorial que seran llamados en el main
 	}
 	return 0.0;
 	
