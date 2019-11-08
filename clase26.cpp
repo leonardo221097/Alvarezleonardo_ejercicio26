@@ -1,19 +1,19 @@
 
 #include <iostream>
 using namespace std;
- float factorial(int x, double *puntero);
+ float factorial(int x, float *puntero);
 
 int main () {
   int x = 6; // numero al que se le va a hacer el factorial 
-	double *puntero;
-   puntero = new double[x]; // se crea un double del tamaño de x
+	float *puntero;
+   puntero = new float[x]; // se crea un float del tamaño de x
   
     factorial(x,puntero); // ejecuto la funcion factorial
   
    return 0;
 }
  
-float factorial (int x,double *puntero){ // creo la función factorial
+float factorial (int x,float *puntero){ // creo la función factorial
 	for (int i=0;i<x;i++){
 		if(i==0 ) //  si el valor i es 0 retornar 1
 		{ puntero[i] =1;} 
