@@ -4,7 +4,7 @@ using namespace std;
  float factorial(int x, float *puntero);
 
 int main () {
-  int x = 6; // numero al que se le va a hacer el factorial 
+  int x = 10; // numero al que se le va a hacer el factorial 
 	float *puntero;
    puntero = new float[x]; // se crea un float del tamaño de x
   
